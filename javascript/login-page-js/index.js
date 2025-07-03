@@ -1,20 +1,25 @@
 const email = document.getElementById('email');
-
 const nome = document.getElementById('nome');
+const form = document.getElementById('loginForm');
 
-const addButton = document.getElementById('addButton');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-function alerta() {
-    const valorNome = nome.value;
-    const valorEmail = email.value;
+  if (!form.checkValidity()) {
+    alert('Por favor, preencha todos os campos corretamente.');
+    return;
+  }
 
-    if (valorNome == "" || valorEmail == "") {
+  const valorNome = nome.value.trim();
+  const valorEmail = email.value.trim();
 
-        alert('Digite em todos os campos!')
+  const confirmacao = confirm(
+    `Confirma envio das informações?\n\nNome: ${valorNome}\nEmail: ${valorEmail}`
+  );
 
-    } else {
-        alert("Concluído")
-    }
-}
-
-addButton.setAttribute('onclick', 'alerta()')
+  if (confirmacao) {
+    alert('Concluído!');
+    form.reset();
+    nome.focus();
+  }
+});
