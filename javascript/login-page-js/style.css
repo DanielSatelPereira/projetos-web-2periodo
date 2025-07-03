@@ -1,44 +1,45 @@
 body {
-    background: rgb(3, 1, 36);
-    background: linear-gradient(90deg, rgba(3, 1, 36, 1) 0%, rgba(13, 13, 170, 1) 57%, rgba(0, 255, 251, 1) 100%);
+  background: linear-gradient(90deg, #1b1f5e 0%, #227c9d 76%, #17c3b2 100%);
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: bisque;
 
-    background-size: cover;
-    background-position: center center;
-    font-family: 'Arial', 'sans-serif';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: auto;
-    color: bisque;
 }
 
 .container {
-    width: 300px;
-    background-color: #1b138a;
-    padding: 36px;
+  width: 90%;
+  max-width: 360px;
+  background-color: #1b138a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
 input,
 button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 button {
-    background-color: #0ef288;
-    color: #1f1616;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
+  background-color: #0ef288;
+  color: #1f1616;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-    background: #73cec0;
-}
-
-input {
-    padding: 10px;
+  background: #73cec0;
 }
