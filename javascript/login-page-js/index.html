@@ -7,26 +7,27 @@ Alunos: Daniel Satel Pereira         14567
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 1 - 1 BIM</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Projeto Web</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="index.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Login</h1>
+  <div class="container">
+    <h1>Login</h1>
 
-        <label>Email:</label>
-        <input id="email" type="text" placeholder="Digite seu email">
+    <form id="loginForm">
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" placeholder="Digite seu email" required>
 
-        <label for="nome">Nome: </label>
-        <input id="nome" type="text" placeholder="Digite seu nome">
+      <label for="nome">Nome:</label>
+      <input id="nome" name="nome" type="text" placeholder="Digite seu nome" required>
 
-        <button id="addButton">Confirmar</button>
-
-    </div>
+      <button type="submit" id="addButton">Confirmar</button>
+    </form>
+  </div>
 </body>
 
 </html>
