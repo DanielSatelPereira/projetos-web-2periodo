@@ -2,23 +2,25 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Sexta</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Interativo</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 
 <body>
 
-    <div class="quiz-container">
-        <h1>Quiz de Conhecimento Gerais</h1>
-        <div id="question-container" class="question-container">
-            <!--Perguntas e opções para responder-->
-        </div>
-    </div>
+  <div class="quiz-container">
+    <h1>Quiz de Conhecimentos Gerais</h1>
 
+    <!-- Onde as perguntas aparecem -->
+    <div id="question-container" class="question-container"></div>
 
-    <script src="script.js"></script>
+    <!-- Onde os acertos e erros são exibidos -->
+    <div id="feedback" class="feedback"></div>
+  </div>
+
 </body>
 
 </html>
