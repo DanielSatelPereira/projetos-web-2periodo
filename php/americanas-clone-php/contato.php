@@ -1,45 +1,37 @@
 <?php
-echo "Olá amiguinhos!<br>";
-
-//Criação de variavel
-$idade = 19;
-echo $idade;
-
-//Operações matemáticas
-$soma = 2 + 2;
-$subtracao = 4 - 2;
-$multiplicacao = 2 * 2;
-$divisao = 4 / 2;
-
-echo "<br>";
-
-//Tipos de dados
-$idade = 20; // integer
-echo "$idade <br>";
-$texto = "Olá tudo bem? <br>"; // string
-$divisao = 10 / 3; // float
-$verdadeiro = true; // boolean
-$falso = false; // boolean
-
-echo 'Olá, eu tenho ' . $idade . ' anos'; // ' nao consegue processar as variaveis dentro o texto e meio raro
-echo "<br>";
-echo "Olá, eu tenho $idade anos"; // consegue processar as variaveis dentro o texto e mais comum
+$pageTitle = "Contato";
+include "header.php";
 ?>
 
 <main>
-    <h1>Entre em Contato:</h1>
-    <form name="form1" method="post" action="enviar.php">
+    <h1>Fale Comigo</h1>
 
+    <p>Entre em contato para dúvidas, sugestões ou colaborações:</p>
+
+    <form name="formContato" onsubmit="mostrarAlerta(event)">
         <label for="nome">Seu nome:</label>
-        <input type="text" name="nome" id="nome">
-        <br>
-        <label for="email">Seu e-mail:</label>
-        <input type="text" name="email" id="email">
-        <br>
-        <label for="mensagem">Sua mensagem:</label>
-        <textarea name="mensagem" rows="5"></textarea>
-        <br>
-        <button type="submit">Enviar Mensagem</button>
+        <input type="text" name="nome" id="nome" required>
 
+        <label for="email">Seu e-mail:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="mensagem">Sua mensagem:</label>
+        <textarea name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
     </form>
+
+    <p style="margin-top: 20px;">
+        Enquanto o formulário está em construção, você pode entrar em contato diretamente pelo e-mail:
+        <strong>danielsatelpereira@gmail.com</strong>
+    </p>
 </main>
+
+<script>
+    function mostrarAlerta(event) {
+        event.preventDefault();
+        alert("⚠️ Esta função ainda está em construção.\n\nPor favor, envie um e-mail diretamente para: danielsatelpereira@gmail.com");
+    }
+</script>
+
+<?php include "footer.php"; ?>
