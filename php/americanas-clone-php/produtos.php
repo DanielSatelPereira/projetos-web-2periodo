@@ -6,28 +6,18 @@ include "dados.php";
 <main>
     <h1>Nossos produtos:</h1>
     <div class="grid">
-
-
-        <?php
-        
-        foreach ($produtos as $produto) {
-
-
-            ?>
-            <!--trecho do HTML-->
+        <?php foreach ($produtos as $produto): ?>
             <div class="coluna">
-                <img src="imagens/<?= $produto["imagem"] ?>" alt="<?= $produto["nome"] ?>">
+                <img src="imagens/<?= htmlspecialchars($produto["imagem"]) ?>" alt="<?= htmlspecialchars($produto["nome"]) ?>">
                 <p>
-                    <strong><?= $produto["nome"] ?></strong><br>
-                    R$ <?= $produto["valor"] ?>
+                    <strong><?= htmlspecialchars($produto["nome"]) ?></strong><br>
+                    R$ <?= htmlspecialchars($produto["valor"]) ?>
                 </p>
-                <p><a href="produto.php?id=<?= $produto["id"] ?>">Detalhes</a>
+                <p>
+                    <a href="produto.php?id=<?= (int)$produto["id"] ?>">Detalhes</a>
                 </p>
             </div>
-            <?php
-
-        }
-        ?>
+        <?php endforeach; ?>
     </div>
 </main>
 
