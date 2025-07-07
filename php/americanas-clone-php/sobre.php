@@ -1,6 +1,27 @@
+<?php
+include "header.php";
+?>
+
 <main>
     <h1>Sobre o Site</h1>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquid impedit numquam provident debitis laborum deserunt delectus distinctio facilis beatae totam pariatur explicabo aspernatur blanditiis at autem esse voluptatem perferendis!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor saepe quo qui minus, quas architecto veritatis ullam esse enim, rem voluptatem asperiores itaque voluptatum maiores atque debitis ut dolorum deserunt!</p>
+
+    <p>
+        Este site foi desenvolvido como parte de uma atividade acadêmica do curso de Sistemas para Internet da UniALFA.
+        Seu objetivo é simular uma loja virtual inspirada na Americanas, com foco em praticar conceitos de HTML, CSS e
+        PHP.
+    </p>
+
+    <p>
+        Ao longo do projeto, foram aplicadas práticas de programação estruturada em PHP, manipulação de arrays,
+        inclusão de arquivos com `include` e uso de layouts responsivos com CSS.
+    </p>
+
+    <p>
+        O projeto continuará a evoluir com novas funcionalidades, melhorias visuais e implementação de recursos mais
+        avançados.
+    </p>
 </main>
+
+<?php
+include "footer.php";
+?>
