@@ -58,7 +58,17 @@ americanas-clone-php/
 
 ## 📸 Capturas de Tela
 
-> *(adicione prints no GitHub caso deseje mostrar visualmente)*
+### 🏠 Página Inicial com produtos em destaque
+![Página Inicial](./imagens/prints/homepage.png)
+
+### 🛒 Página de Detalhes do Produto
+![Detalhes do Produto](./imagens/prints/produto-detalhe.png)
+
+### 🧾 Lista Completa de Produtos
+![Lista de Produtos](./imagens/prints/lista-produtos.png)
+
+### ℹ️ Página Sobre o Projeto
+![Sobre](./imagens/prints/sobre.png)
 
 ---
 
