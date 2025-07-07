@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>
+<?php include "../header.php"; ?>
 
 <main class="container">
     <h2>Verificação de Idade</h2>
@@ -11,4 +11,4 @@
     </form>
 </main>
 
-<?php include "footer.php"; ?>
+<?php include "../footer.php"; ?>

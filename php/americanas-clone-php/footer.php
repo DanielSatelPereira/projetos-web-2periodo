@@ -1,5 +1,6 @@
     <footer>
-        <p>Desenvolvido por Seu Nome</p>
+        <p>Desenvolvido por Daniel Satel Pereira</p>
     </footer>
-</body>
-</html>
+    </body>
+
+    </html>
