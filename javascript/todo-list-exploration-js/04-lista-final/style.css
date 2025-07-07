@@ -1,0 +1,98 @@
+body {
+  font-family: 'Arial', 'sans-serif';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  margin: 0;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005683;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#agendaButton {
+  background-color: #34a853;
+  /* verde Google */
+}
+
+#agendaButton:hover {
+  background-color: #2c8c46;
+}
+
+.item {
+  list-style: none;
+  background: #f9f9f9;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.item p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.task-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.task-line span:first-child {
+  width: 24px;
+  text-align: center;
+}
+
+.aviso {
+  display: none;
+  color: #b02a37;
+  background-color: #fdecea;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.aviso.ativo {
+  display: block;
+}

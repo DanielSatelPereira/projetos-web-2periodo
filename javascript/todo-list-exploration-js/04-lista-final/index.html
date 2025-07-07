@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <main class="container">
+    <h1>📋 Lista de Tarefas</h1>
+
+    <input id="taskInput" type="text" placeholder="Tarefa">
+    <input id="datetimeInput" type="datetime-local" placeholder="Data e Hora">
+    <input id="locationInput" type="text" placeholder="Local">
+    <input id="peopleInput" type="text" placeholder="Pessoas envolvidas">
+
+    <button id="addButton">➕ Adicionar Tarefa</button>
+    <p id="aviso" class="aviso"></p>
+
+    <ul id="taskList"></ul>
+
+    <button id="agendaButton" class="secundario">📅 Enviar para Agenda</button>
+  </main>
+
+</body>
+
+</html>
